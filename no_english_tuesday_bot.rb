@@ -18,8 +18,7 @@ Telegram::Bot::Client.run(ARGV[0]) do |no_english_tuesday_bot|
     message_id:
       no_english_tuesday_bot.api.send_message(
       chat_id: ARGV[1],
-      text: "Today is No English Tuesday! This is the last allowed English message for the next 24 hours.")
-    ["result"]["message_id"])
+      text: "Today is No English Tuesday! This is the last allowed English message for the next 24 hours.")["result"]["message_id"])
   # As the previous action was the only one, exit the loop
   break
 end
